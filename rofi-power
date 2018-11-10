@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 
 import subprocess as sp
+import sys
 
 if __name__ == '__main__':
 
     commands = {
         'Suspend': 'systemctl suspend',
-        'Lock': 'i3lock-fancy -- maim',
-        'Restart': 'shutdown -r now',
-        'Shutdown': 'shutdown now',
+        'Restart': 'systemctl reboot',
+        'Shutdown': 'systemctl poweroff',
     }
+
+    if len(sys.argv) > 1:
+        commands['Lock'] = sys.argv[1]
 
     options = commands.keys()
     title = 'rofi-power'
