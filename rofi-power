@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import subprocess as sp
 
@@ -16,7 +16,9 @@ if __name__ == '__main__':
     rofi = f'rofi -dmenu -i -p {title}'.split()
     rofi_input = '\n'.join(x for x in options)
 
-    selection = sp.check_output(
-        rofi, input=rofi_input, encoding='utf-8').strip()
-
-    sp.run(commands[selection].split())
+    try:
+        selection = sp.check_output(
+            rofi, input=rofi_input, encoding='utf-8').strip()
+        sp.run(commands[selection].split())
+    except sp.CalledProcessError:
+        pass
