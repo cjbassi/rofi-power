@@ -19,10 +19,8 @@ if __name__ == '__main__':
     rofi = f'rofi -dmenu -i -p {title}'.split()
     rofi_input = '\n'.join(x for x in options)
 
-    try:
-        selection = sp.check_output(
-            rofi, input=rofi_input, encoding='utf-8').strip()
+    cp = sp.run(rofi, input=rofi_input, encoding='utf-8', capture_output=True)
+    if cp.returncode == 0:
+        selection = cp.stdout.strip()
         if selection in commands:
             sp.run(commands[selection].split())
-    except sp.CalledProcessError:
-        pass
