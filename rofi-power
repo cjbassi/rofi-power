@@ -7,8 +7,8 @@ if __name__ == '__main__':
 
     commands = {
         'Suspend': 'systemctl suspend',
-        'Restart': 'systemctl reboot',
-        'Shutdown': 'systemctl poweroff',
+        'Reboot': 'systemctl reboot',
+        'Poweroff': 'systemctl poweroff',
     }
 
     if len(sys.argv) > 1:
