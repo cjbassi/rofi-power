@@ -12,8 +12,9 @@ Provides:
 - Suspend
 - Reboot
 - Poweroff
+- Hibernate
 
-Add a Lock command to the options by passing the lock command as a quoted cli argument.
+Add a Lock command to the options by settings the `LOCKPRG` ENV variable.
 
 ## Installation
 
