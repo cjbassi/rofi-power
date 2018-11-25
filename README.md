@@ -14,7 +14,10 @@ Provides:
 - Poweroff
 - Hibernate
 
-Add a Lock command to the options by settings the `LOCKPRG` ENV variable.
+Optional commands:
+
+- Lock: set the `LOCKPRG` ENV variable
+- Exit: set the `EXITPRG` ENV variable
 
 ## Installation
 

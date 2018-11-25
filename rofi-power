@@ -15,6 +15,9 @@ if __name__ == '__main__':
     if 'LOCKPRG' in os.environ:
         commands['Lock'] = os.environ['LOCKPRG']
 
+    if 'EXITPRG' in os.environ:
+        commands['Exit'] = os.environ['EXITPRG']
+
     options = commands.keys()
     title = 'rofi-power'
     rofi = f'rofi -dmenu -i -p {title}'.split()
