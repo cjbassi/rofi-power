@@ -9,7 +9,7 @@ if __name__ == '__main__':
         'Suspend': 'systemctl suspend',
         'Hibernate': 'systemctl hibernate',
         'Reboot': 'systemctl reboot',
-        'Poweroff': 'systemctl poweroff',
+        'Shutdown': 'systemctl poweroff',
     }
 
     if 'LOCKPRG' in os.environ:

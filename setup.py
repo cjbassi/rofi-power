@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='rofi-power',
-    version='0.4.0',
+    version='0.5.0',
     scripts=['rofi-power'],
     url='https://github.com/cjbassi/rofi-power',
 )
