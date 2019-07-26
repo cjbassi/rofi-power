@@ -4,14 +4,14 @@ Systemd based power management with [Rofi](https://github.com/DaveDavenport/rofi
 
 Requires:
 
-- rofi
-- a systemd based Linux distro
+- Rofi
+- A systemd based Linux distro
 
 Provides:
 
 - Suspend
 - Reboot
-- Poweroff
+- Shutdown
 - Hibernate
 
 Optional commands:
