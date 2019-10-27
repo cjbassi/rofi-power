@@ -9,9 +9,9 @@ Requires:
 
 Provides:
 
-- Suspend
-- Reboot
-- Shutdown
+- Suspend/Sleep
+- Reboot/Restart
+- Shutdown/Poweroff
 - Hibernate
 
 Optional commands:
