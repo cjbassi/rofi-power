@@ -6,10 +6,10 @@ import subprocess as sp
 if __name__ == '__main__':
 
     commands = {
-        'Suspend': 'systemctl suspend',
+        'Suspend/Sleep': 'systemctl suspend',
         'Hibernate': 'systemctl hibernate',
-        'Reboot': 'systemctl reboot',
-        'Shutdown': 'systemctl poweroff',
+        'Reboot/Restart': 'systemctl reboot',
+        'Shutdown/Poweroff': 'systemctl poweroff',
     }
 
     if 'LOCKPRG' in os.environ:
